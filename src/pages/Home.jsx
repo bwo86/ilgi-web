@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { DiaryStateContext } from "../App";
 import Button from "../components/Button";
-import NoteList from "../components/NoteList";
+import DiaryList from "../components/DiaryList";
 import Header from "../components/Header";
 
 // 이번달에 해당하는 데이터 반환 
@@ -31,7 +31,7 @@ const Home = () => {
         leftChild={<Button onClick ={onDecreaseMonth} text = {"<"}/>}
         rightChild={<Button onClick = {onIncreseMonth} text={">"}/>}
         />
-        <NoteList data={ monthlyData }/>
+        <DiaryList data={monthlyData}/>
     </div>
     );
 };

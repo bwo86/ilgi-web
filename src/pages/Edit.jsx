@@ -4,7 +4,7 @@ import { DiaryDispatchContext } from "../App";
 import Button from "../components/Button";
 import Editor from "../components/Editor";
 import Header from "../components/Header";
-import useDiary from "../hooks/useNote";
+import useDiary from "../hooks/useDiary";
 import usePageTitle from "../hooks/usePageTitle";
 
 const Edit = () => {

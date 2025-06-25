@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { emotionList } from "../utils/constant";
-import { getStringDate } from "../utils/get-string-date";
+import { emotionList } from "../util/constant";
+import { getStringDate } from "../util/get-string-date";
 import Button from "./Button";
 import "./Editor.css";
 import EmotionItem from "./EmotionItem";

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
-import DiaryItem from "./NoteItem";
-import "./NoteList.css";
+import DiaryItem from "./DiaryItem";
+import "./DiaryList.css";
  
 const DiaryList = ({data}) => {
     const nav = useNavigate();

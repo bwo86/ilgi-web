@@ -1,6 +1,7 @@
 import { createContext, useEffect, useReducer, useRef, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Note from "./pages/Note";
+import "./App.css";
+import Diary from "./pages/Diary";
 import Edit from "./pages/Edit";
 import Home from "./pages/Home";
 import New from "./pages/New";
@@ -118,7 +119,7 @@ function App() {
   <Routes> 
     <Route path="/" element={<Home/>} />
     <Route path="/new" element={<New />} />
-    <Route path="/diary/:id" element={<Note />}/>
+    <Route path="/diary/:id" element={<Diary />}/>
     <Route path="/edit/:id" element={<Edit />} />
     {/* 지정한 주소가 아닌 경우 */}
     <Route path="*" element={<Notfound />}/>
